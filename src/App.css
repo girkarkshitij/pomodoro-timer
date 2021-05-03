@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -127,4 +129,88 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Color scheme */
+:root {
+  --dark-red: #db524d;
+  --medium-red: #df645f;
+  --white: #ffffff;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-red);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.child-container {
+  background-color: var(--medium-red);
+  padding: 2rem;
+}
+
+/* Make the element inline */
+.inline {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  color: var(--white);
+  border: none;
+  background: none;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+}
+
+/* Break section */
+.break {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#break-label {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Session section */
+.session {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#break-label {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Timer */
+.timer {
+  text-align: center;
+  background-color: var(--dark-red);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
